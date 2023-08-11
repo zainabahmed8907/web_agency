@@ -75,7 +75,7 @@ const Navbar = () => {
               News
             </a>
 
-            <a
+            <p
               href="#responsive-header"
               className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded 
@@ -83,7 +83,7 @@ const Navbar = () => {
              "
             >
              Contact Us
-            </a>
+            </p>
           </div>
         </div>
       </div>
@@ -130,7 +130,7 @@ const Navbar = () => {
             News
           </a>
 
-          <a
+          <p
             href="#responsive-header"
             className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded   
@@ -140,7 +140,7 @@ const Navbar = () => {
              "
           >
             Contact Us
-          </a>
+          </p>
         </div>
       </div>
     </nav>
