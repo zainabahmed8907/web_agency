@@ -11,8 +11,34 @@ import s4 from "../assets/img/PS4.png";
 import s5 from "../assets/img/VR.png";
 import s6 from "../assets/img/MobileDev.png";
 import ServiceContainer from "../components/ServiceContainer";
-
+import SliderCard from "../components/SliderCard";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const Home = () => {
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 3,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
   return (
     <>
       <Navbar />
@@ -101,9 +127,24 @@ const Home = () => {
         </div>
       </main>
 
-      <section className="slider lg:pt-2 m-10 lg:m-20">
-        <p className="font-bold text-2xl">Lorem Ipsum</p>
-        <p className="mt-4 lg:w-96 text-sm">lorem ipsum is simply dummy text of the priniting and typesetting industry.</p>
+      <section className="bg-[#F5F5F5] pb-2 pt-2 lg:pt-0">
+        <div className="lg:pt-10 lg:m-20 m-10">
+          <p className="font-bold text-2xl">Lorem Ipsum</p>
+          <p className="mt-4 lg:w-96 text-sm mb-10">
+            lorem ipsum is simply dummy text of the priniting and typesetting
+            industry.
+          </p>
+
+          <Slider {...settings}>
+
+            <SliderCard pillbgColor="#bdf3d8" pilltextColor="#0CBE64" />
+          <SliderCard pillbgColor="#f79999" pilltextColor="#DC0000" />
+          <SliderCard pillbgColor="#eab4f7" pilltextColor="#B000DC" />
+          <SliderCard pillbgColor="#8bd3ed" pilltextColor="#0058DC" />
+            
+
+          </Slider>
+        </div>
       </section>
     </>
   );
