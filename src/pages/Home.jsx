@@ -66,7 +66,7 @@ const Home = () => {
         </p>
         <p
           className="text-center lg:m-20
-         lg:text-sm text-sm lg:mt-10 mt-2 leading-6 mb-8
+         text-sm lg:mt-10 mt-2 leading-6 mb-8
          "
         >
           Lorem ipsum is simply dummy text of the printing and typing industry.
@@ -100,6 +100,11 @@ const Home = () => {
           </div>
         </div>
       </main>
+
+      <section className="slider lg:pt-2 m-10 lg:m-20">
+        <p className="font-bold text-2xl">Lorem Ipsum</p>
+        <p className="mt-4 lg:w-96 text-sm">lorem ipsum is simply dummy text of the priniting and typesetting industry.</p>
+      </section>
     </>
   );
 };
