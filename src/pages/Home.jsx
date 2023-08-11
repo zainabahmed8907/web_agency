@@ -8,6 +8,9 @@ import grid from "../assets/img/grid.png";
 import HomeSlider from "../components/sections/HomeSlider";
 import HomeServices from "../components/sections/HomeServices";
 import HomeGrid from "../components/sections/HomeGrid";
+import DescContainer from "../components/DescContainer";
+import HomeDesc from "../assets/img/HomeDesc.png";
+import Subscribe from "../components/Subscribe";
 
 const Home = () => {
   return (
@@ -56,7 +59,20 @@ const Home = () => {
 
       <HomeSlider />
 
-      <HomeGrid/>
+      <HomeGrid />
+      <DescContainer
+        img={HomeDesc}
+        descHeading="Lorem ipsum is simply the dummy text dummy text"
+      />
+
+      <div className="m-10 lg:m-20 pt-10">
+        <p className="text-xl font-bold">Lorem Ipsum</p>
+        <p className="text-sm pt-4">
+          Lorem ipsum is simply the dummy text of the printing and <br />
+          typesetting indsutry.
+        </p>
+        <Subscribe />
+      </div>
     </>
   );
 };

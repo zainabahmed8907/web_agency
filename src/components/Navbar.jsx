@@ -78,7 +78,8 @@ const Navbar = () => {
             <a
               href="#responsive-header"
               className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
-             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded text-[#DC7000]
+             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded 
+             text-orange-400
              "
             >
               Contact Us
@@ -94,49 +95,50 @@ const Navbar = () => {
         } `}
       >
         <div className="bg-white-600 p-4">
-        <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white
+          <a
+            href="#responsive-header"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white
             	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
              amber-500
               "
-            >
-              Home
-            </a>
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white
+          >
+            Home
+          </a>
+          <a
+            href="#responsive-header"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white
             	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
               
               "
-            >
-              About Us
-            </a>
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+          >
+            About Us
+          </a>
+          <a
+            href="#responsive-header"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out  pr-4 
              "
-            >
-              Services
-            </a>
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+          >
+            Services
+          </a>
+          <a
+            href="#responsive-header"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out  pr-4 
              "
-            >
-              News
-            </a>
+          >
+            News
+          </a>
 
-            <a
-              href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
-             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded text-[#DC7000]
+          <a
+            href="#responsive-header"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded              text-orange-400
+
              "
-            >
-              Contact Us
-            </a>
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </nav>
