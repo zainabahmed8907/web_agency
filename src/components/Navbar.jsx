@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/img/logo.jpeg";
+import Logo from "../assets/img/boldo_logo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
@@ -9,10 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex  flex-wrap items-center justify-between bg-white-500 p-2 shadow-lg ">
+    <nav className="flex flex-wrap items-center justify-between bg-[#E47500] p-2 shadow-lg ">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center flex-shrink-0 text-white">
-          <img src={Logo} alt="logo" className="w-40 h-20 object-cover" />
+          <img src={Logo} alt="logo" className=" object-cover" />
         </div>
         <button
           className="lg:hidden flex items-center text-black"
@@ -20,8 +20,8 @@ const Navbar = () => {
         >
           <svg
             className="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
+            fill="white"
+            stroke="white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -39,66 +39,104 @@ const Navbar = () => {
             isMobileMenuOpen ? "hidden" : "block"
           }`}
         >
-          <div className="lg:text-lg space-x-4 mt-4 lg:mt-0 lg:ml-auto  ">
+          <div className="lg:text-sm space-x-20 mt-4 lg:mt-0 lg:ml-auto  ">
             <a
               href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-sky-400
-            	hover:text-black transition-colors duration-400 ease-in-out
-              font-bold
+              className="block mt-4 lg:inline-block lg:mt-0 text-white
+            	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
+             amber-500
               "
             >
-              About Me
+              Home
             </a>
             <a
               href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-sky-400
-            	hover:text-black mr-4 transition-colors duration-400 ease-in-out
-              font-bold
+              className="block mt-4 lg:inline-block lg:mt-0 text-white
+            	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
+              
               "
             >
-              My Work
+              About Us
             </a>
             <a
               href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-sky-400	hover:text-black
-             transition-colors duration-400 ease-in-out font-bold pr-4
+              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+             transition-colors duration-400 ease-in-out  pr-4 
              "
             >
-              Contact Me
+              Services
+            </a>
+            <a
+              href="#responsive-header"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+             transition-colors duration-400 ease-in-out  pr-4 
+             "
+            >
+              News
+            </a>
+
+            <a
+              href="#responsive-header"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded text-[#DC7000]
+             "
+            >
+              Contact Us
             </a>
           </div>
         </div>
       </div>
 
       {/* Responsive menu (shown on smaller screens) */}
-      <div className={`lg:hidden transition-all duration-200 ${isMobileMenuOpen ? "h-0 opacity-0" : "h-auto opacity-100"} `}>
+      <div
+        className={`lg:hidden transition-all duration-200 ${
+          isMobileMenuOpen ? "h-0 opacity-0" : "h-auto opacity-100"
+        } `}
+      >
         <div className="bg-white-600 p-4">
-          <a
-            href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-sky-400
-            	hover:text-black transition-colors duration-400 ease-in-out
-              font-bold
+        <a
+              href="#responsive-header"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white
+            	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
+             amber-500
               "
-          >
-            About Me
-          </a>
-          <a
-            href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-sky-400
-            	hover:text-black mr-4 transition-colors duration-400 ease-in-out
-              font-bold
+            >
+              Home
+            </a>
+            <a
+              href="#responsive-header"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white
+            	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
+              
               "
-          >
-            My Work
-          </a>
-          <a
-            href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-sky-400	hover:text-black
-             transition-colors duration-400 ease-in-out font-bold pr-4
+            >
+              About Us
+            </a>
+            <a
+              href="#responsive-header"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+             transition-colors duration-400 ease-in-out  pr-4 
              "
-          >
-            Contact Me
-          </a>
+            >
+              Services
+            </a>
+            <a
+              href="#responsive-header"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+             transition-colors duration-400 ease-in-out  pr-4 
+             "
+            >
+              News
+            </a>
+
+            <a
+              href="#responsive-header"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
+             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded text-[#DC7000]
+             "
+            >
+              Contact Us
+            </a>
         </div>
       </div>
     </nav>
