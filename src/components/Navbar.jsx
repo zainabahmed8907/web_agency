@@ -79,10 +79,10 @@ const Navbar = () => {
               href="#responsive-header"
               className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded 
-             text-orange-400
+             text-orange-200
              "
             >
-              Contact Us
+             Contact Us
             </a>
           </div>
         </div>
@@ -133,7 +133,9 @@ const Navbar = () => {
           <a
             href="#responsive-header"
             className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
-             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded              text-orange-400
+             transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded   
+             text-orange-200
+
 
              "
           >

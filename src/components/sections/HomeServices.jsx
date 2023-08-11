@@ -53,7 +53,7 @@ const HomeServices = () => {
             <ServiceContainer serviceImg={s2} serviceText="3D Modelings" />
           </div>
         </div>
-      </main>xF
+      </main>
       
       </>
   )

@@ -30,7 +30,7 @@ const HomeSlider = () => {
   };
   return (
     <>
-      <section className="bg-[#F5F5F5] pb-2 pt-2 lg:pt-0 pb-10">
+      <section className="bg-[#F5F5F5] lg:pb-2 pt-2 lg:pt-0 pb-10">
         <div className="lg:pt-10 lg:m-20 m-10">
           <p className="font-bold text-2xl">Lorem Ipsum</p>
           <p className="mt-4 lg:w-96 text-sm mb-10">
