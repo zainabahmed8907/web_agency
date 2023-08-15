@@ -3,9 +3,10 @@ import React from "react";
 
 const Hero = ({ img, minitext, mainText, paraDesc, buttonText }) => {
   return (
-    <div >
+    <div className="">
       <div className="flex flex-wrap lg:flex-nowrap ">
-        <div className="text-container">
+      
+        <div className="text-container lg:w-1/2">
           <p className="text-[#DC7000] text-lg font-bold mb-4">{minitext}</p>
           <p className="lg:text-5xl text-4xl font-bold w-80 " style={{lineHeight:"60px"}}>
             {mainText}
@@ -18,8 +19,9 @@ const Hero = ({ img, minitext, mainText, paraDesc, buttonText }) => {
             {buttonText}
           </button>
         </div>
-        <div className="img-container">
-          <img src={img} alt="heromain" className="w-auto h-auto lg:-mt-20 lg:block hidden" />
+        
+        <div className="img-container lg:block hidden">
+          <img src={img} alt="heromain" className="w-auto h-screen lg:-mt-20 " />
         </div>
       </div>
    

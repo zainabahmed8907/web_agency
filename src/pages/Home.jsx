@@ -11,11 +11,11 @@ import HomeGrid from "../components/sections/HomeGrid";
 import DescContainer from "../components/DescContainer";
 import HomeDesc from "../assets/img/HomeDesc.png";
 import Subscribe from "../components/Subscribe";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
 
       <div className="w-auto lg:p-20 p-10 h-screen z-40 bg-orange-200">
         <Hero
@@ -72,6 +72,10 @@ const Home = () => {
           typesetting indsutry.
         </p>
         <Subscribe />
+      </div>
+
+      <div className="pt-10">
+        <Footer />
       </div>
     </>
   );

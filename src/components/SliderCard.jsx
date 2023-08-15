@@ -2,7 +2,10 @@ import React from "react";
 
 const SliderCard = ({ pillbgColor, pilltextColor }) => {
   return (
-    <div className="bg-white h-72 lg:w-80 w-72 p-4 rounded-xl shadow-lg ">
+    <div className="bg-white h-72 lg:w-80 w-72 p-4 rounded-xl shadow-lg
+      hover:bg-[#F5F5F5] hover:cursor-pointer
+      transition ease-in-out delay-150 
+      ">
       <p
         className={` rounded w-28 m-4 px-2 py-1`}
         style={{ backgroundColor: pillbgColor, color: pilltextColor }}

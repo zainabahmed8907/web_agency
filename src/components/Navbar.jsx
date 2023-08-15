@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Logo from "../assets/img/boldo_logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
@@ -40,50 +41,50 @@ const Navbar = () => {
           }`}
         >
           <div className="lg:text-sm space-x-20 mt-4 lg:mt-0 lg:ml-auto  ">
-            <a
-              href="#responsive-header"
+            <Link
+              to="/"
               className="block mt-4 lg:inline-block lg:mt-0 text-white
             	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
              amber-500
               "
             >
               Home
-            </a>
-            <a
-              href="#responsive-header"
+            </Link>
+            <Link
+              to="/about-us"
               className="block mt-4 lg:inline-block lg:mt-0 text-white
             	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
               
               "
             >
               About Us
-            </a>
-            <a
-              href="#responsive-header"
+            </Link>
+            <Link
+              to="/services"
               className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out  pr-4 
              "
             >
               Services
-            </a>
-            <a
-              href="#responsive-header"
+            </Link>
+            <Link
+              to="/news"
               className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out  pr-4 
              "
             >
               News
-            </a>
+            </Link>
 
-            <p
-              href="#responsive-header"
+            <Link
+              to="#responsive-header"
               className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded 
              text-orange-200
              "
             >
-             Contact Us
-            </p>
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>
@@ -95,43 +96,43 @@ const Navbar = () => {
         } `}
       >
         <div className="bg-white-600 p-4">
-          <a
-            href="#responsive-header"
+          <Link
+            to="/"
             className="block mt-4 lg:inline-block lg:mt-0 text-white
             	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
              amber-500
               "
           >
             Home
-          </a>
-          <a
-            href="#responsive-header"
+          </Link>
+          <Link
+            to="/about-us"
             className="block mt-4 lg:inline-block lg:mt-0 text-white
             	hover:text-[#f5cca1]  transition-colors duration-400 ease-in-out
               
               "
           >
             About Us
-          </a>
-          <a
-            href="#responsive-header"
+          </Link>
+          <Link
+            to="/services"
             className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out  pr-4 
              "
           >
             Services
-          </a>
-          <a
-            href="#responsive-header"
+          </Link>
+          <Link
+            to="/news"
             className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out  pr-4 
              "
           >
             News
-          </a>
+          </Link>
 
-          <p
-            href="#responsive-header"
+          <Link
+            to="/contact-us"
             className="block mt-4 lg:inline-block lg:mt-0 text-white	hover:text-[#f5cca1]
              transition-colors duration-400 ease-in-out w-30 bg-white px-3 py-2 rounded   
              text-orange-200
@@ -140,7 +141,7 @@ const Navbar = () => {
              "
           >
             Contact Us
-          </p>
+          </Link>
         </div>
       </div>
     </nav>
